@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(99, 24, 169);
+    color: whitesmoke;
+    justify-self: center;
+}
+
+button {
+    padding: 10px;
+    appearance: none;
+    border-radius: 25px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    width: 100px;
+}
