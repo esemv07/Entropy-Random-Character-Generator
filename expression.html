@@ -8,8 +8,28 @@
         <h2>Expression</h2>
         <div class="options-container">
             <div class="option-card">
-                
+                <h3>Masc</h3>
+                <img src="assets/masc character/Masc Character Base.png">
+            </div>
+            <div class="option-card">
+                <h3>Fem</h3>
+                <img src="assets/fem character/Fem Character Base.png">
             </div>
         </div>
+        <button id="picker" onclick=pickItems(expression,1)>Pick Expression</button>
+        <br>
+        <div class="results-container hidden" id="resultsContainer">
+            <h4>Result: </h4>
+            <p id="results"></p>
+        </div>
+        <a href="index.html" class="hidden" id="next">
+            <button>Next</button>
+        </a>
+        <br>
+        <a href="index.html">
+            <button>Back</button>
+        </a>
+
+        <script src="script.js"></script>
     </body>
 </html>
