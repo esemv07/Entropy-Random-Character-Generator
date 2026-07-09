@@ -218,7 +218,7 @@ function restart() {
 
 
 window.addEventListener('load', () => {
-    if (window.location.href.includes("character.html")) {
+    if (window.location.href.includes("character-final")) {
         const character = JSON.parse(localStorage.getItem("character"));
         document.getElementById('expression').innerHTML = character.expression;
         document.getElementById('birthday').innerHTML = `Age: ${character.age}<br>Birth Month: ${character.birthday}`;
