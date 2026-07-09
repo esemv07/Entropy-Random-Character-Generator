@@ -184,7 +184,7 @@ function pickItems(arrayName, number) {
     document.getElementById('next').classList.remove('hidden');
     let resultsString = "";
     results.forEach((result) => {
-        resultsString += `${result} `;
+        resultsString += `${result}<br>`;
     })
     document.getElementById('results').innerHTML = resultsString;
     document.getElementById('resultsContainer').classList.remove('hidden');

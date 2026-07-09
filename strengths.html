@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Character Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Strengths</h2>
+        <div class="options-container">
+             <div class="option-card">
+                <h3>adventurous<br>ambitiou<br>approachable<br>calm<br>compassionate<br>confident<br>courageous</h3>
+            </div>
+            <div class="option-card">
+                <h3>dependable<br>easygoing<br>enthusiastic<br>fearless<br>focused<br>generous<br>hard working</h3>
+            </div>
+            <div class="option-card">
+                <h3>intelligent<br>knowledgeable<br>lovable<br>loyal<br>noble<br>polite<br>resilient</h3>
+            </div>
+            <div class="option-card">
+                <h3>responsible<br>selfless<br>skillful<br>strong<br>thoughtful<br>wise<br>witty</h3>
+            </div>
+        </div>
+        <button id="picker" onclick=pickItems(strengths,3)>Pick Strengths</button>
+        <br>
+        <div class="results-container hidden" id="resultsContainer">
+            <h4>Result: </h4>
+            <p id="results"></p>
+        </div>
+        <a href="birthday.html" class="hidden" id="next">
+            <button>Next</button>
+        </a>
+        <br>
+
+        <script src="script.js"></script>
+    </body>
+</html>
