@@ -5,19 +5,25 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Birth Month</h2>
+        <h2>Height</h2>
         <div class="options-container">
              <div class="option-card">
-                <h3>January<br>February<br>March<br>April<br>May<br>June<br>July<br>August<br>September<br>October<br>November<br>December</h3>
+                <h3>4ft 10in - 5ft<br>5ft 1in - 5ft 3in<br>5ft 4in - 5ft 6in<br>5ft 7in - 5ft 9in</h3>
+                <img src="assets/height-short.png">
+            </div>
+            <div class="option-card">
+                <h3>5ft 10in - 6ft<br>6ft 1in - 6ft 3in<br>6ft 4in - 6ft 6in</h3>
+                <br>
+                <img src="assets/height.png">
             </div>
         </div>
-        <button id="picker" onclick=pickItems(birthMonth,1)>Pick Birth Month</button>
+        <button id="picker" onclick=pickItems(height,1)>Pick Hieght</button>
         <br>
         <div class="results-container hidden" id="resultsContainer">
             <h4>Result: </h4>
             <p id="results"></p>
         </div>
-        <a href="height.html" class="hidden" id="next">
+        <a href="birthday.html" class="hidden" id="next">
             <button>Next</button>
         </a>
         <br>
