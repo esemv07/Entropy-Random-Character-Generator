@@ -5,26 +5,28 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h2>Expression</h2>
+        <h2>Fears</h2>
         <div class="options-container">
-            <div class="option-card">
-                <h3>Masc</h3>
-                <img src="assets/masc character/Masc Character Base.png">
+             <div class="option-card">
+                <h3>enclosed spaces<br>blood<br>cats<br>spiders<br>dogs<br>insects</h3>
             </div>
             <div class="option-card">
-                <h3>Fem</h3>
-                <img src="assets/fem character/Fem Character Base.png">
+                <h3>mice and rats<br>snakes<br>birds<br>darkness<br>failure<br>mirrors</h3>
+            </div>
+            <div class="option-card">
+                <h3>bright colours<br>demons<br>death<br>fire<br>witchcraft<br>the moon</h3>
             </div>
         </div>
-        <button id="picker" onclick='pickItems(expression,1,"expression")'>Pick Expression</button>
+        <button id="picker" onclick='pickItems(fears,3,"fears")'>Pick Fears</button>
         <br>
         <div class="results-container hidden" id="resultsContainer">
             <h4>Result: </h4>
             <p id="results"></p>
         </div>
-        <a href="age.html" class="hidden" id="next">
+        <a href="likes-and-dislikes.html" class="hidden" id="next">
             <button>Next</button>
         </a>
+        <br>
 
         <script src="script.js"></script>
     </body>
