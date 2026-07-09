@@ -120,7 +120,6 @@ fears = [
 
 likesOrDislikes = [
     "outer space",
-    "clouds",
     "rain",
     "snow",
     "the ocean",
@@ -180,13 +179,21 @@ function getRandomItem(array, number) {
 }
 
 function pickItems(arrayName, number) {
-    const results = getRandomItem(arrayName, number);
-    document.getElementById('next').classList.remove('hidden');
-    let resultsString = "";
-    results.forEach((result) => {
-        resultsString += `${result}<br>`;
-    })
-    document.getElementById('results').innerHTML = resultsString;
+    if (arrayName == likesOrDislikes) {
+        const results = getRandomItem(arrayName, number);
+        document.getElementById('next').classList.remove('hidden');
+        let resultsString = "";
+        resultsString = `Likes... ${results[0]}<br><br>Dislikes... ${results[1]}`;
+        document.getElementById('results').innerHTML = resultsString;
+    } else {
+        const results = getRandomItem(arrayName, number);
+        document.getElementById('next').classList.remove('hidden');
+        let resultsString = "";
+        results.forEach((result) => {
+            resultsString += `${result}<br>`;
+        })
+        document.getElementById('results').innerHTML = resultsString;
+    }
     document.getElementById('resultsContainer').classList.remove('hidden');
     document.getElementById('picker').disabled = true;
 }

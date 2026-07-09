@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Character Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Likes and Dislikes</h2>
+        <div class="options-container">
+             <div class="option-card">
+                <h3>outer space<br>rain<br>snow<br>the ocean<br>forests<br>mountains<br>travelling<br>shopping<br>baking and cooking<br>writing</h3>
+            </div>
+            <div class="option-card">
+                <h3>photography<br>gaming<br>sports<br>reading<br>animals<br>art<br>learning<br>listening to music<br>programming<br>blogging</h3>
+            </div>
+            <div class="option-card">
+                <h3>trains<br>comics<br>camping<br>surfing<br>swimming<br>skateboarding<br>cycling<br>maths<br>history<br>geography</h3>
+            </div>
+            <div class="option-card">
+                <h3>science<br>singing<br>acting<br>inventing<br>sleeping in<br>podcasts<br>robotics<br>documentarias<br>comedy<br>complaining</h3>
+            </div>
+        </div>
+        <button id="picker" onclick=pickItems(likesOrDislikes,2)>Pick Likes and Dislikes</button>
+        <br>
+        <div class="results-container hidden" id="resultsContainer">
+            <h4>Result: </h4>
+            <p id="results"></p>
+        </div>
+        <a href="birthday.html" class="hidden" id="next">
+            <button>Next</button>
+        </a>
+        <br>
+
+        <script src="script.js"></script>
+    </body>
+</html>
